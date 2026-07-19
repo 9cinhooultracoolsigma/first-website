@@ -6,14 +6,25 @@
     <title>The coolest 7th grader website</title>
   </head>
   <body style="background-color: #1a1a2e; color: #e2e2e; font-family: 'Segeo UI' , Tahoma, Geneva, Verdana, sans-serif; text allign: center; padding-top: 80px;">
-    <h1 style="color: #00f2fe; font-size: 2.5rem: margin-bottom: 20px;">Hello world!</h1>
+    <h1 style="color: #00f2fe; font-size: 2.5rem: margin-bottom: 20px;">hi dude</h1>
     <p style="font-size: 1.2rem; line-height: 1.6; margin: 0 auto 30px auto; max-width: 600px;">
       Im quite an adventurous dude who likes books and texts.
       my current goal is to become the smartest student in my informatics class!
     </p>
+  <button onclick='revealSecret()" style='background-color: #4ecca3; color #1a1a2e; border:none; padding: 15px 30px; border-rdius: 50px; font-size: 1rem; font-weight: bold; cursor: pointer; box-shadow: 0px 4px 15px rgba(78, 204, 163, 0.4); transition: 0.3s;">
+  </button>
+    <p id="SecretMessage" style="fot-size: 1.5rem; color: #ff2e63; font-weight: bold; margin-top: 20px; display: none;"></p>
+    <br>
+  
     <div style='background-color: #162113e; border: 1px solid #0f3460; display: inline-block; padding: 15px 30px; border-radius: 50px; font-weight: bold; letter-space: 1px; color: #4ecca3;">
       STATUS: CODING IN THE ZONE (2026)
     </div>
-
+      <script>
+      function revealSecret() {
+      var message = document.getElementById("secretMessage");
+      message.innerHTML = "Mission Accomplished! You're now tracking the coolest coder in 7th grade! woowooowooooo :3";
+      message.style.display = "block";
+      }
+    </script>
     </body>
     </html>
